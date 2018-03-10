@@ -4,6 +4,7 @@ function entry_to_url(entry) {
   var location = '&location=' + entry.lat + ',' + entry.lng;
   var heading = '&heading=' + entry.heading;
   var pitch = '&pitch=' + entry.pitch;
+  var key = 'AIzaSyC6fnYlMyBFPpQMDRwxLFtrPp_FuFBS6LY';
   return base + size + location + heading + pitch;
 };
 (function() {
