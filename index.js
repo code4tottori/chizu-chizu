@@ -5,7 +5,7 @@ function entry_to_url(entry) {
   var heading = '&heading=' + entry.heading;
   var pitch = '&pitch=' + entry.pitch;
   var key = '&key=AIzaSyC6fnYlMyBFPpQMDRwxLFtrPp_FuFBS6LY';
-  return base + size + location + heading + pitch;
+  return base + size + location + heading + pitch + key;
 };
 (function() {
   Papa.parse('markers.csv', {
