@@ -3,9 +3,10 @@ function entry_to_image_url(entry) {
   var size = '?size=300x300';
   var location = '&location=' + entry.lat + ',' + entry.lng;
   var heading = '&heading=' + entry.heading;
+  var fov = '&fov=' + entry.fov;
   var pitch = '&pitch=' + entry.pitch;
   var key = '&key=AIzaSyC6fnYlMyBFPpQMDRwxLFtrPp_FuFBS6LY';
-  return base + size + location + heading + pitch + key;
+  return base + size + location + heading + fov + pitch + key;
 };
 
 function entry_to_link_url(entry) {
